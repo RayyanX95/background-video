@@ -37,7 +37,7 @@ const BackgroundVideo = (props) => {
           </div>
         </div>
       </div>
-      <span id="video-bottom"></span>
+      {/* <span id="video-bottom"></span> */}
     </>
   )
 }

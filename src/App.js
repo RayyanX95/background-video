@@ -5,10 +5,10 @@ import './App.css';
 
 function App() {
   return (
-    <div style={{ height: ''}} >
+    <div style={{ height: '',}} >
       <BackgroundVideo />
 
-      <div style={{ height: 1500, backgroundColor: 'red' }} >
+      <div style={{ height: 1500, backgroundColor: '#60255f' }} >
       </div>
     </div>
   );
