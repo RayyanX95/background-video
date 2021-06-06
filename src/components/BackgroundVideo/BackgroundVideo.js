@@ -1,8 +1,6 @@
 import React from 'react';
 
-const BackgroundVideo = (props) => {
-  const videoSource = "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4";
-
+const BackgroundVideo = ({ videoSource, children }) => {
   return (
     <>
       <div className='container' style={{ maxHeight: window.innerHeight }}>
@@ -14,7 +12,7 @@ const BackgroundVideo = (props) => {
           <source src={videoSource} type="video/mp4" />
             Your browser does not support the video tag.
       </video>
-        {props.children}
+        {children}
       </div>
       <span id="video-bottom"></span>
     </>
