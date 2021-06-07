@@ -17,17 +17,17 @@ function App() {
         videoSource={videoSource} >
         <div className='content'>
           <div className='sub-content' >
-            <h1>Reactjs Course</h1>
-            <p>Learn how to develope React projects</p>
+            <h1>Background Video</h1>
+            <p>Learn how to create a background video in React</p>
             <button
               className="btn btn-outline-dark"
               onClick={scrollToBottom}>
               Let's go!
           </button>
-            <img
+            {/* <img
               className="view-image"
               src="https://www.jing.fm/clipimg/detail/139-1394959_panda-cartoon-png-cute-cartoon-panda-bear.png"
-              alt="profile" />
+              alt="profile" /> */}
           </div>
         </div>
       </BackgroundVideo>
