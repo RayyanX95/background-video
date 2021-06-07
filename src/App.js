@@ -4,15 +4,17 @@ import BackgroundVideo from './components/BackgroundVideo/BackgroundVideo';
 import './App.css';
 
 function App() {
+  const videoSource = "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4";
   const scrollToBottom = () => {
-    const bottomEle = document.getElementById("video-bottom");
+    const bottomEle = document.getElementById("video-id");
     bottomEle.scrollIntoView({ behavior: "smooth" });
   }
-  
+
   return (
     <div style={{ height: '', }} >
-      <BackgroundVideo 
-        videoSource="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4" >
+      <BackgroundVideo
+        blur={2}
+        videoSource={videoSource} >
         <div className='content'>
           <div className='sub-content' >
             <h1>Reactjs Course</h1>
