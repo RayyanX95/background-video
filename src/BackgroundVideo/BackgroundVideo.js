@@ -1,11 +1,6 @@
 import React from 'react';
 
 const BackgroundVideo = ({ videoSource, children, blur }) => {
-  // const video = React.useRef(null);
-  // React.useEffect(() => {
-  //   console.log(video.current.style);
-  //   video.current.style.filter = "blur(10px)";
-  // }, []);
   return (
     <>
       <div className='container'>
@@ -14,7 +9,6 @@ const BackgroundVideo = ({ videoSource, children, blur }) => {
           autoPlay="autoplay"
           loop="loop"
           muted
-          // ref={video}
           id="video-id"
           className='video' >
           {/* TODO make it accept multiple media types */}
@@ -23,7 +17,7 @@ const BackgroundVideo = ({ videoSource, children, blur }) => {
       </video>
         {children}
       </div>
-      {/* <span id="video-bottom"></span> */}
+      <span id="video-bottom"></span>
     </>
   )
 }
